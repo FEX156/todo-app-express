@@ -10,8 +10,8 @@ const port = 5000;
 app.use(cors());
 app.use(express.json());
 
-app.use("/todos", router);
+app.use("/", router);
 
 app.listen(port, () => {
-  console.log("app run at http://localhost:5000/todos");
+  console.log("app run at https://todo-app-express-production.up.railway.app/");
 });
